@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Gothic:wdth@87.5&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+body{
+
+        background:rgba(3, 82, 3, 0.575); 
+        font-family:"Playfair Display", serif ;
+      color: rgb(10, 87, 10);
+
+}
+
+#contenedor{
+    width: 900px;
+    height: 500px;
+    text-align: center;
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    border-radius: 10px;
+  overflow: hidden; 
+  box-shadow: 0 14px 28px rgb(0, 0, 0), 
+    0 10px 10px rgb(0, 0, 0);
+}
+#calculadora{
+    background: whitesmoke;
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+#detalle{
+    background: rgba(12, 104, 12, 0.555);
+    width: 50%;
+    height: 100%;
+    float: left;
+    color: white;
+}
+
+
+.contenido{
+    /* Estas tres lineas van a centrar el contenido verticalmente dentro de cada div */
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    overflow: hidden;
+    padding: 40px;
+}
+input {
+	width: 70%;
+    padding: 12px 15px;
+    border: none; 
+    background-color: #e9e1e1be;
+}
+button {
+    font-size: 15px;
+
+      font-weight: bold;
+
+      padding: 12px 45px;
+
+      border-radius: 30px;
+
+      background-color:#0d7530 ;
+
+      border: 2px solid #030303;
+
+      color: #FFFFFF;
+      margin-top: 20px;
+      
+      text-transform: uppercase;
+
+      letter-spacing: 1px;
+
+      transition: transform 20 ms ease-in;
+  }
+
+
+
+  button:active {
+	transform: scale(0.95);
+}
+#error{
+    color: rgb(12, 94, 36);
+    font-weight: bold;
+    display: none;
+}
+
+.resultado{
+    color: #098a34;
+    font-weight: bold;
+    font-size: 25px;
+    margin-bottom: 5px;
+    display: none;
+}
